@@ -1,0 +1,115 @@
+// Start Variables
+$main-color: #ff7766;
+
+// Strat General Styles
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cairo', sans-serif;
+  box-sizing: border-box;
+}
+
+// Strat General Styles
+
+// Start Header Section
+.header {
+  background-color: #f1f1f1;
+  border: 1px solid #f1f1f1;
+}
+
+.brand__name {
+  margin: 0;
+  padding: 12px 40px;
+  padding-right: 0;
+  font-size: 27px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #444 !important;
+
+  &:hover {
+    color: $main-color;
+  }
+}
+
+.brand__name:hover {
+  color: $main-color !important;
+}
+
+.hamburger__menu {
+  padding: 5px;
+  border: 2px solid rgba(68, 68, 68, 0.5) !important;
+  border-radius: 0;
+  cursor: pointer;
+
+  i {
+    font-size: 28px;
+  }
+}
+
+.header__navbar {
+  padding: 0;
+}
+
+.navbar__container {
+  background-color: #f1f1f1;
+
+}
+
+.navbar__list {
+  .navbar__item:first-of-type {
+    .navbar__link {
+      margin-top: 15px;
+    }
+  }
+}
+
+.navbar__link {
+  display: block;
+  border: 1px solid #f1f1f1;
+  padding: 22px !important;
+  font-weight: 700;
+
+  &:hover {
+    color: $main-color !important;
+    background-color: #fff;
+  }
+}
+
+.navbar__link.active {
+  color: $main-color !important;
+  background-color: #fff;
+}
+
+@media screen and (min-width:992px) {
+  .header {
+    padding: 0;
+  }
+
+  .navbar__container {
+    ul {
+      width: 100%;
+    }
+  }
+
+  .navbar__link {
+    border: 0;
+  }
+
+  .navbar__list {
+    .navbar__item:first-of-type {
+      .navbar__link {
+        margin-top: 0;
+        border-left: 1px solid #f1f1f1;
+        border-right: 1px solid #f1f1f1;
+      }
+    }
+  }
+
+}
+
+.box {
+  background-color: #000;
+  height: 100vh;
+}
+
+// End Header Section

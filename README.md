@@ -1,5 +1,4 @@
-## Startup Website
-### https://startup-web-site.netlify.app/
+#### Startup Website : https://startup-web.netlify.app/
 ## Technologies
 ##### 1 - HTML
 ##### 2 - CSS / SASS

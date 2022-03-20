@@ -9,12 +9,35 @@ $main-color: #ff7766;
   box-sizing: border-box;
 }
 
+body {
+  height: 1000px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn__primary {
+  border: 0;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  padding: 12px 25px;
+  color: #fff;
+  background-color: $main-color;
+  letter-spacing: 1px;
+  transition: background 0.4s ease-out;
+
+  &:hover {
+    color: #fff;
+    background-color: transparent;
+  }
+}
+
 // Strat General Styles
 
 // Start Header Section
 .header {
   background-color: #f1f1f1;
-  border: 1px solid #f1f1f1;
 }
 
 .brand__name {
@@ -42,7 +65,7 @@ $main-color: #ff7766;
   cursor: pointer;
 
   i {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 
@@ -113,3 +136,116 @@ $main-color: #ff7766;
 }
 
 // End Header Section
+
+// Start Hero Section
+
+.hero__carousel {
+  .carousel__indicators {
+    button {
+      margin: 0 7px;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+
+      &.active {
+        background-color: $main-color;
+      }
+    }
+
+  }
+
+  .carousel__container {
+    .carousel__item {
+      height: 550px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      background-color: rgba(65, 155, 155, 0.8);
+      background-blend-mode: multiply;
+
+      .carousel__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        color: #fff;
+        text-align: center;
+
+        .carousel__title {
+          font-size: 30px;
+          line-height: 1.4;
+
+          span {
+            display: none;
+          }
+        }
+
+        .carousel__description {
+          margin-top: 7px;
+          margin-bottom: 20px;
+          padding: 0 10px;
+          color: rgba(255, 255, 255, 0.6);
+          font-size: 15px;
+          line-height: 1.6;
+          letter-spacing: 1px;
+        }
+      }
+    }
+
+    .carousel__item:nth-of-type(1) {
+      background-image: url('../images/hero/hero-slide-1.webp');
+    }
+
+    .carousel__item:nth-of-type(2) {
+      background-image: url('../images/hero/hero-slide-2.webp');
+    }
+
+    .carousel__item:nth-of-type(3) {
+      background-image: url('../images/hero/hero-slide-3.webp');
+    }
+  }
+
+  .carousel__arrow {
+    display: none;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .hero__carousel {
+    .carousel__container {
+      .carousel__item {
+        .carousel__content {
+          .carousel__title {
+            font-size: 35px;
+            font-weight: 600;
+
+            span {
+              display: inline;
+            }
+          }
+        }
+      }
+    }
+
+    .carousel__btn {
+      display: block;
+    }
+  }
+}
+
+@media screen and (min-width:992px) {
+  .hero__carousel {
+    .carousel__container {
+      .carousel__item {
+        height: 685px;
+      }
+    }
+
+    .carousel__arrow {
+      display: block;
+    }
+  }
+}
+
+// End Hero Section

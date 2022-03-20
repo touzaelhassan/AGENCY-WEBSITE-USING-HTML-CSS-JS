@@ -1,4 +1,11 @@
 #### Startup Website : https://startup-web.netlify.app/
+## Design
+
+![a](https://user-images.githubusercontent.com/59705964/159154443-28ea8b00-38f7-4ddd-a73e-e2524b212995.PNG)
+![b](https://user-images.githubusercontent.com/59705964/159154463-4a34e601-cd0d-4ba3-a5be-4c83084d1e33.PNG)
+![c](https://user-images.githubusercontent.com/59705964/159154474-1c2d4a32-b6da-43ae-9402-68c31409d552.PNG)
+![d](https://user-images.githubusercontent.com/59705964/159154525-36a91587-b692-477a-b2cf-7e5432c09f2d.PNG)
+
 ## Technologies
 ##### 1 - HTML
 ##### 2 - CSS / SASS
@@ -9,8 +16,4 @@
 ##### 1 - Git
 ##### 2 - Webpack
 
-## Design
-![s1](https://user-images.githubusercontent.com/59705964/158526774-767baf89-6e46-4a22-b2b6-cb141a73b275.PNG)
-![s2](https://user-images.githubusercontent.com/59705964/158527030-a6cd86de-cf6b-4661-bae7-f98849516b9c.PNG)
-![s3](https://user-images.githubusercontent.com/59705964/158527283-fd2966c9-8e29-4895-9b0d-9f9b2677ad8d.PNG)
-![s4](https://user-images.githubusercontent.com/59705964/158527449-2212e64d-35b7-41ab-b5cb-161864a7f7be.PNG)
+

@@ -9,6 +9,7 @@ module.exports = {
     publicPath: '/',
     path: path.resolve(__dirname, 'build'),
     filename: 'js/main.js',
+    clean: true,
   },
 
   module: {
@@ -40,8 +41,15 @@ module.exports = {
         ],
       },
       {
-        test: /\.html$/i,
-        loader: 'html-loader',
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+            options: {
+              minimize: true,
+            },
+          },
+        ],
       },
     ],
   },

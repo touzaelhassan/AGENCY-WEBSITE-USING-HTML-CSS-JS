@@ -1,5 +1,6 @@
 // Start Variables
 $main-color: #ff7766;
+$secondary-color: #2B9D9D;
 
 // Strat General Styles
 * {
@@ -115,8 +116,6 @@ a {
   }
 }
 
-
-
 @media screen and (min-width:992px) {
   .header {
     padding: 0;
@@ -142,11 +141,6 @@ a {
     }
   }
 
-}
-
-.box {
-  background-color: #000;
-  height: 100vh;
 }
 
 // End Header Section
@@ -289,7 +283,7 @@ a {
 
 @media screen and (min-width:992px) {
   .about {
-    padding: 70px 0;
+    padding: 80px 0;
 
     .about__content {
       .about__description {
@@ -304,6 +298,50 @@ a {
 }
 
 // End About Section
+
+
+// Start Startup Name Section
+
+.brand-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 60vh;
+  background-attachment: fixed;
+  background-image: url("../images/laptop1.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: multiply;
+
+  .brand-name__content {
+    color: #fff;
+    text-align: center;
+
+    h3 {
+      border: 5px solid #fff;
+      padding: 12px 50px;
+      font-size: 50px;
+      font-weight: 600;
+      letter-spacing: 5px;
+    }
+
+    p {
+      margin-top: 20px;
+      color: #fafafa;
+      font-size: 16px;
+      letter-spacing: 2px;
+    }
+  }
+}
+
+@media screen and (min-width:992px) {
+  .brand-name {
+    height: 80vh;
+  }
+}
+
+// End Startup Name Section
 
 // Start Projects Section
 .projects {
@@ -484,7 +522,7 @@ a {
   h3 {
     padding: 0;
     margin: 0;
-    color: #2B9D9D;
+    color: $secondary-color;
     font-size: 18px;
   }
 

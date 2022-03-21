@@ -321,6 +321,7 @@ a {
     h3 {
       border: 5px solid #fff;
       padding: 12px 50px;
+      color: $secondary-color;
       font-size: 50px;
       font-weight: 600;
       letter-spacing: 5px;
@@ -346,7 +347,7 @@ a {
 // Start Projects Section
 .projects {
   padding: 50px 0;
-  background-color: #fafafa;
+  background-color: #eef7ff;
 
   .projects__title {
     margin-bottom: 50px;
@@ -479,7 +480,7 @@ a {
 @media screen and (min-width:992px) {
 
   .projects {
-    padding: 70px 0;
+    padding: 80px 0;
 
     .projects__title {
       margin-bottom: 70px;
@@ -499,6 +500,85 @@ a {
 }
 
 // End Projects Section
+
+// Start Posts Section
+.posts {
+  padding: 50px 0;
+  background-color: #ffff;
+
+  .posts__title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .posts__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+
+    .post {
+      border: 2px solid #eee;
+      max-width: 500px;
+      background-color: #fff;
+      box-shadow: rgba(149, 157, 165, 0.1) 0px 8px 24px;
+
+      .post__image {
+        border: 2px solid #eee;
+
+        img {
+          width: 100%;
+        }
+
+      }
+
+      .post__text {
+        position: relative;
+        bottom: 45px;
+        margin: 25px;
+        margin-bottom: 0;
+        padding: 20px 10px;
+        border: 2px solid #eee;
+        background-color: #fff;
+        text-align: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+        p {
+          color: gray;
+          font-size: 15px;
+        }
+
+        button {
+          &:hover {
+            color: $main-color;
+            border-color: $main-color;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+@media screen and (min-width : 992px) {
+  .posts {
+    padding: 80px 0;
+
+    .posts__title {
+      margin-bottom: 50px;
+    }
+
+    .posts__content {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+    }
+  }
+}
+
+// End Posts Section
 
 /* Start Footer Section */
 

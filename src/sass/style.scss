@@ -346,7 +346,7 @@ a {
 
 // Start Projects Section
 .projects {
-  padding: 50px 0;
+  padding: 70px 0;
   background-color: #eef7ff;
 
   .projects__title {
@@ -500,6 +500,107 @@ a {
 }
 
 // End Projects Section
+
+// Start Testimonials Section
+.testimonials {
+  padding: 70px 0;
+  background-attachment: fixed;
+  background-image: url("../images/time.jpg");
+  background-size: cover;
+  background-position: position;
+  background-color: #2B9D9D;
+  background-blend-mode: multiply;
+
+  .testimonials__title {
+    margin-bottom: 70px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .testimonials__content {
+    .carousel {
+      .carousel-inner {
+        .carousel-item {
+          .testimonial__container {
+            display: flex;
+            justify-content: center;
+
+            .testimonial {
+              border: 3px solid #eee;
+              border-radius: 5px;
+              padding: 20px;
+              background-color: #fff;
+              text-align: center;
+
+              div {
+                margin-bottom: 10px;
+
+                img {
+                  border-radius: 50%;
+                  border: 3px solid #eee;
+                }
+              }
+
+              p {
+                color: #666;
+                letter-spacing: 1px;
+              }
+            }
+
+            .testimonial.hide {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width:992px) {
+  .testimonials {
+    padding: 100px 0;
+
+    .testimonials__content {
+      .carousel {
+        .carousel-inner {
+          .carousel-item {
+            .testimonial__container {
+              display: flex;
+              justify-content: center;
+              gap: 40px;
+
+              .testimonial.hide {
+                display: block;
+              }
+            }
+          }
+        }
+      }
+
+      button {
+        i {
+          font-size: 30px;
+          opacity: 0;
+        }
+      }
+
+      .carousel-control-prev {
+        right: -70px;
+      }
+
+      .carousel-control-next {
+        left: -70px;
+      }
+    }
+  }
+
+}
+
+
+// End Testimonials Section
 
 // Start Posts Section
 .posts {

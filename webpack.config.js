@@ -92,6 +92,11 @@ module.exports = {
       filename: 'blog-post.html',
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/about.html',
+      filename: 'about.html',
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
     new CssMinimizerPlugin(),
   ],

@@ -713,7 +713,6 @@ a {
 // End Posts Section
 
 // Start Projects Banner Section
-
 .projects-banner {
   display: flex;
   justify-content: center;
@@ -733,6 +732,72 @@ a {
 }
 
 // End Projects Banner Section
+
+// Start Our Projects Section
+
+.our-projects {
+  padding: 50px 0;
+
+  .container {
+    .our-projects__content {
+      .our-projects__item {
+        margin: 0;
+        padding: 0;
+        border: 20px solid #fff;
+
+        .our-projects__image {
+          position: relative;
+
+          img {
+            display: block;
+            width: 100%;
+            border: 2px solid #eee;
+            border-bottom: 0;
+          }
+
+          .our-projects__tag {
+            position: absolute;
+            top: 20px;
+            right: 2px;
+            border-top-left-radius: 3px;
+            border-bottom-left-radius: 3px;
+            padding: 5px 9px;
+            color: #fff;
+            background-color: $main-color;
+            font-weight: 600;
+          }
+        }
+
+        .our-projects__text {
+          padding: 20px 10px;
+          text-align: center;
+          border: 2px solid #eee;
+
+          .our-projects__description {
+            color: #666;
+          }
+
+          .our-projects__btn {
+            display: inline-block;
+            margin: 10px 0;
+            border: 2px solid #ff7766;
+            border-radius: 3px;
+            padding: 7px 20px;
+            color: #ff7766;
+            text-decoration: none;
+
+            &:hover {
+              color: #fff;
+              background-color: #ff7766;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// End Our Projects Section
 
 /* Start Footer Section */
 

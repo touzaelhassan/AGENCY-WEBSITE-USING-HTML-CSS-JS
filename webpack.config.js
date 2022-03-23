@@ -97,6 +97,11 @@ module.exports = {
       filename: 'about.html',
     }),
 
+    new HtmlWebpackPlugin({
+      template: './src/contact.html',
+      filename: 'contact.html',
+    }),
+
     new MiniCssExtractPlugin({ filename: 'css/style.css' }),
     new CssMinimizerPlugin(),
   ],

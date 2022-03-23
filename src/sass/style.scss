@@ -717,7 +717,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 250px;
+  height: 300px;
   background-image: url("../images/projects.webp");
   background-repeat: no-repeat;
   background-size: cover;
@@ -799,8 +799,65 @@ a {
 
 // End Our Projects Section
 
-/* Start Footer Section */
+// Start Projects Details Section
 
+.projects-details {
+  padding: 50px 0;
+
+  .projects-details__item {
+    img {
+      border: 3px solid #eee;
+    }
+  }
+
+}
+
+// End Projects Details Section
+
+// Start Projects Details Description
+
+.projects-details-description {
+  margin-bottom: 50px;
+  text-align: center;
+
+  .projects-details-description__content {
+    padding: 40px 30px;
+    border: 1px solid #eee;
+
+    p {
+      color: #666;
+      font-size: 14px;
+    }
+
+    button {
+      border: 2px solid #ff7766;
+
+      &:hover {
+        color: #ff7766;
+        border-color: #ff7766;
+      }
+    }
+  }
+
+  .projects-details-description__description {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    color: #666;
+    line-height: 1.8;
+    letter-spacing: 1px;
+  }
+}
+
+@media screen and (min-width:992px) {
+  .projects-details {
+    padding: 80px 0;
+  }
+}
+
+// End Projects Details Description
+
+/* Start Footer Section */
 .footer__top {
   padding: 50px;
   background-color: #171717;

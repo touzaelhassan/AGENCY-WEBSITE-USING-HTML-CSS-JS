@@ -585,6 +585,7 @@ a {
         i {
           font-size: 30px;
           color: #fff !important;
+          opacity: 0;
         }
       }
 
@@ -710,6 +711,28 @@ a {
 }
 
 // End Posts Section
+
+// Start Projects Banner Section
+
+.projects-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-image: url("../images/projects.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #2B9D9D;
+  background-blend-mode: multiply;
+
+  h1 {
+    color: #fff;
+    letter-spacing: 3px;
+  }
+}
+
+// End Projects Banner Section
 
 /* Start Footer Section */
 

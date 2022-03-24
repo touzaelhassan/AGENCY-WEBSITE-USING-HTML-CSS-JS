@@ -557,8 +557,6 @@ a {
   }
 }
 
-
-
 @media screen and (min-width:992px) {
   .testimonials {
     padding: 100px 0;
@@ -721,7 +719,6 @@ a {
   background-image: url("../images/team1.webp");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position-y: -120px;
   background-color: #2B9D9D;
   background-blend-mode: multiply;
 
@@ -740,7 +737,7 @@ a {
 }
 
 .banner--about {
-  background-image: url(../images/banner-about.jpg);
+  background-image: url("../images/banner-about.jpg");
 }
 
 .about__team__content {
@@ -804,6 +801,10 @@ a {
 }
 
 @media screen and (min-width:992px) {
+  .about-banner {
+    background-position-y: -120px;
+  }
+
   .about__team__content {
     justify-content: space-between;
   }

@@ -905,12 +905,52 @@ a {
   padding: 50px 0;
 
   .projects-details__item {
+    cursor: pointer;
+
     img {
       border: 3px solid #eee;
     }
   }
 
 }
+
+.modal {
+  padding-top: 100px;
+}
+
+.modal__container {
+  margin-bottom: 50px;
+  min-height: 500px;
+  width: 800px !important;
+  max-width: 800px;
+  background-color: #fff;
+}
+
+.carousel-control-prev {
+  bottom: -500px;
+  height: -10px;
+}
+
+.carousel-control-next {
+  bottom: -500px;
+  height: -10px;
+}
+
+.modal__btns {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.modal__btns button {
+  display: inline-block;
+  border: none;
+  padding: 7px 10px;
+  color: #fff;
+  background-color: gray;
+  border-radius: 4px;
+}
+
 
 // End Projects Details Section
 

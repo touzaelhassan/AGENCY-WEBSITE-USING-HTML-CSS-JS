@@ -76,7 +76,11 @@
     <section class="projects-details">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 projects-details__item">
+          <div
+            class="col-lg-4 col-md-12 mb-4 mb-lg-0 projects-details__item"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalCenter"
+          >
             <img
               src="images/main-page.png"
               class="w-100 shadow-1-strong rounded mb-4"
@@ -88,7 +92,11 @@
             />
           </div>
 
-          <div class="col-lg-4 mb-4 mb-lg-0 projects-details__item">
+          <div
+            class="col-lg-4 mb-4 mb-lg-0 projects-details__item"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalCenter"
+          >
             <img
               src="images/channel-page1.png"
               class="w-100 shadow-1-strong rounded mb-4"
@@ -100,7 +108,11 @@
             />
           </div>
 
-          <div class="col-lg-4 mb-4 mb-lg-0 projects-details__item">
+          <div
+            class="col-lg-4 mb-4 mb-lg-0 projects-details__item"
+            data-bs-toggle="modal"
+            data-bs-target="#exampleModalCenter"
+          >
             <img
               src="images/sidebar.png"
               class="w-100 shadow-1-strong rounded mb-4"
@@ -115,6 +127,89 @@
       </div>
     </section>
     <!-- End Projects Details Section -->
+
+    <!-- Start Projects Details Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div
+        class="modal-dialog modal-dialog-centered modal__container"
+        role="document"
+      >
+        <div class="modal-content">
+          <div class="modal-body modal__body">
+            <div
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="images/main-page.png"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/modal.png"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/channel-page1.png"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/search-page.png"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/sidebar.png"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="images/watch-page.png"
+                    class="w-100 shadow-1-strong rounded mb-4"
+                  />
+                </div>
+              </div>
+              <a
+                class="carousel-control-prev"
+                href="#carouselExampleControls"
+                role="button"
+                data-bs-slide="prev"
+              >
+              </a>
+              <a
+                class="carousel-control-next"
+                href="#carouselExampleControls"
+                role="button"
+                data-bs-slide="next"
+              >
+              </a>
+            </div>
+            <div class="modal__btns py-4">
+              <button>التالي</button>
+              <button>السابق</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Projects Details Modal -->
 
     <!-- Start Projects Details Description Section -->
     <section class="projects-details-description">
